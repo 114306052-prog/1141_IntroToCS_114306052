@@ -1,0 +1,164 @@
+body{
+    background-color: beige;
+    padding: 40px;
+    margin:0;
+}
+.main-container {
+    width: 1000px;
+    display: flex;
+    align-items: stretch;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white; 
+    margin: 20px auto;
+    padding:0;
+}
+.left-panel{
+    width: 30%;
+    padding: 0px;
+}
+.right-panel{
+    width:70%;
+    padding:10px;
+}
+.photo-panel img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.text-content img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.text-content{
+    background-color: rgb(200, 200, 200);
+    border-radius: 1px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+.section-title{
+    font-size:20px;
+    margin-bottom:10px;
+    border-bottom:2px #000000;
+    padding-bottom:5px;
+}
+.section-title{
+    font-size:20px;
+    margin-bottom:10px;
+    border-bottom:2px #000000;
+    padding-bottom:5px;
+}
+.section-title{
+    font-size:20px;
+    margin-bottom:10px;
+    border-bottom:2px solid#ccc;
+    padding-bottom:5px;
+}
+.edu-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.edu-item .year {
+    font-weight: bold;
+    width: 120px;    
+}
+
+.edu-item .description {
+    flex-grow: 1;    
+}
+.section-title{
+    font-size:20px;
+    margin-bottom:10px;
+    border-bottom:2px solid#ccc;
+    padding-bottom:5px;
+}
+.skill-list .tag {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #e6f0ff ;  
+    color:#003366;             
+    border-radius: 12px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+.section-title{
+    font-size:20px;
+    margin-bottom:10px;
+    border-bottom:2px solid#ccc;
+    padding-bottom:5px;
+}
+.hw-lab-container {
+    display: flex;
+    gap: 10px;
+}
+
+.hw-column, .lab-column {
+    flex: 1;
+    background-color: #e6f0ff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.hw-column h5, .lab-column h5 {
+    margin-top: 0;
+    color: black;  
+    font-size:18px;
+}
+
+.hw-column a, .lab-column a {
+    text-decoration: none; 
+    color: rgb(105, 64, 122);                
+    font-weight: 100;
+    font-size:15px;
+}
+
+.hw-column a:hover, .lab-column a:hover {
+    color: #d4b1ef;
+    font-size:15px;
+}
+
+.hw-column ul, .lab-column ul {
+    padding-left: 13px;
+    padding-right: 13px;
+   
+}
+.section-title{
+    font-size:20px;
+    margin-bottom:10px;
+    border-bottom:2px solid#ccc;
+    padding-bottom:5px;
+}
+.music-row {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.music-item {
+    width: 22%; 
+}
+
+.music-item img {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+}
+
+.song-title {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.music-note {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 14px;
+    color: #555;
+}
