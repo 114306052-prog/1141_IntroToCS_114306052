@@ -33,8 +33,8 @@
 
       chances--;
 
-      if (guess == answer) {
-        alert("答對了！正確答案是：${answer}");
+      if (guess === answer) {
+        alert(`答對了！正確答案是：${answer}`);
         document.getElementById("result").innerHTML =
           '<img src="correct.jpg" width="300">';
         break;

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>114306052_HW6_1A2B</title>
+    <style>
+      body {
+        font-family: Arial;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 36px;
+      }
+      #record {
+        margin-top: 20px;
+        white-space: pre-line;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>114306052_HW7_1A2B</h1>
+
+    <p>
+      Enter 4 unique numbers:
+      <input id="guessInput" maxlength="4" />
+      <button onclick="play()">Guess!</button>
+    </p>
+
+    <h3>Game Record：</h3>
+    <div id="record"></div>
+
+    <script>
+      function generateAnswer() {
+        let digits = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+        let ans = "";
+
+        for (let i = 0; i < 4; i++) {
+          let idx = Math.floor(Math.random() * digits.length);
+          ans += digits[idx];
+          digits.splice(idx, 1);
+        }
+        return ans;
+      }
+
+      let answer = generateAnswer();
+      console.log("Secret answer =", answer);
+      let count = 0;
+
+      function isValid(str) {
+        if (str.length !== 4) return false;
+        if (isNaN(str)) return false;
+
+        let set = new Set(str.split(""));
+        if (set.size !== 4) return false;
+
+        return true;
+      }
+
+      function checkAB(guess, ans) {
+        let A = 0,
+          B = 0;
+
+        for (let i = 0; i < 4; i++) {
+          if (guess[i] === ans[i]) {
+            A++;
+          } else if (ans.includes(guess[i])) {
+            B++;
+          }
+        }
+        return `${A}A${B}B`;
+      }
+
+      function play() {
+        let inputField = document.getElementById("guessInput");
+        let guess = inputField.value.trim();
+
+        if (!isValid(guess)) {
+          alert("Invalid! 請輸入 4 個不重複的數字");
+          return;
+        }
+
+        count++;
+        let result = checkAB(guess, answer);
+
+        document.getElementById(
+          "record"
+        ).innerText += `第${count}次：${guess} → ${result}\n`;
+
+        if (result === "4A0B") {
+          alert(`你猜對了！總共猜了 ${count} 次！`);
+        }
+
+        inputField.value = "";
+      }
+    </script>
+  </body>
+</html>
