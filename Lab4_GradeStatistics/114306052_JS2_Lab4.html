@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Grade Statistics</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Today's Lab</h1>
+    <h2>Grade Statistics</h2>
+
+    <div class="input-area">
+      <input type="number" id="mathInput" placeholder="Math" />
+      <input type="number" id="engInput" placeholder="English" />
+      <button id="submitBtn">Submit</button>
+    </div>
+
+    <table id="gradeTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Math</th>
+          <th>English</th>
+          <th>Average</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- new rows go here -->
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <th>Average</th>
+          <th id="mathAvg">0</th>
+          <th id="engAvg">0</th>
+          <th id="overallAvg">0</th>
+        </tr>
+      </tfoot>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
