@@ -1,0 +1,35 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#calc-box {
+    width: 250px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+input, select, button {
+    width: 100%;
+    margin: 8px 0;
+    padding: 6px;
+}
+
+button {
+    background-color: #b57f4a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a06d3e;
+}
+
+#result {
+    font-weight: bold;
+    margin-top: 12px;
+}
